@@ -1,8 +1,17 @@
 
+" FIXME smartindent does not work
+" for K&R style indented shell scripts
+
+" FIXME Prevent escape from moving the cursor
+" one character to the left
+
+"
+set nocompatible
+
 "indents, tabs
 set tabstop=4
 set shiftwidth=4
-set softtabstop=4
+"set softtabstop=4
 set smarttab
 set autoindent
 set smartindent
@@ -24,9 +33,6 @@ endif
 
 "
 "set exrc
-
-"
-set nocompatible
 
 "
 "set secure
@@ -63,13 +69,13 @@ map <down>	<NOP>
 map <left>	<NOP>
 map <right> <NOP>
 
-imap <up>	 <NOP>
-imap <down>	 <NOP>
-imap <left>	 <NOP>
-imap <right> <NOP>
-
 "
-map <C-c>	:noh<CR>
+map <C-c>	<Esc>:noh<CR>
 
-"inoremap {<CR> {<CR>}<Esc><S-o>
+" autocomplete matching curly brace 
+inoremap {<CR> {<CR>}<Esc>ko
+
 "inoremap ( ()<Esc>i
+
+" q: sucks
+nmap q: :q
