@@ -52,7 +52,7 @@ set showmatch
 set matchtime=3
 
 "
-colorscheme evening
+"colorscheme evening
 
 "highlight
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE 
@@ -79,3 +79,8 @@ inoremap {<CR> {<CR>}<Esc>ko
 
 " q: sucks
 nmap q: :q
+
+" enable syntax highlight
+syntax enable
+
+set backspace=indent,eol,start
