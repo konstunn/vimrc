@@ -57,7 +57,8 @@ set matchtime=3
 "highlight
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE 
 highlight Comment ctermfg=DarkCyan
-highlight Folded cterm=italic ctermfg=DarkGrey ctermbg=Blue
+highlight Folded cterm=italic ctermfg=DarkGrey ctermbg=DarkBlue
+highlight Visual ctermbg=DarkBlue
 
 "autocmd (what for?)
 autocmd BufWinLeave *.* mkview
@@ -84,3 +85,5 @@ nmap q: :q
 syntax enable
 
 set backspace=indent,eol,start
+
+set ruler
