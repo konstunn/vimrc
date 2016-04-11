@@ -8,7 +8,7 @@
 "
 set nocompatible
 
-"indents, tabs
+" Indents, tabs
 set tabstop=4
 set shiftwidth=4
 "set softtabstop=4
@@ -37,43 +37,43 @@ endif
 "
 "set secure
 
-"search
+" Search
 set hlsearch
 set incsearch
 
-"line numbers
+" Line numbers
 set number
 
 "
 set laststatus=2
 
-"show matching paretheses
+" Show matching paretheses
 set showmatch
 set matchtime=3
 
 "
 "colorscheme evening
 
-"highlight
+" Highlight
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE 
 highlight Comment ctermfg=DarkCyan
 highlight Folded cterm=italic ctermfg=DarkGrey ctermbg=DarkBlue
 highlight Visual ctermbg=DarkBlue
 
-"autocmd (what for?)
+" Save folds views
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview
 
-"disable arrow keys
+" Disable arrow keys
 map <up>	<NOP>
 map <down>	<NOP>
 map <left>	<NOP>
 map <right> <NOP>
 
-"
+" Reset search highlight on Ctrl+C
 map <C-c>	<Esc>:noh<CR>
 
-" autocomplete matching curly brace 
+" Autocomplete matching curly brace 
 inoremap {<CR> {<CR>}<Esc>ko
 
 "inoremap ( ()<Esc>i
@@ -81,9 +81,11 @@ inoremap {<CR> {<CR>}<Esc>ko
 " q: sucks
 nmap q: :q
 
-" enable syntax highlight
+" Enable syntax highlight
 syntax enable
 
+" Force usual backspace behaviour
 set backspace=indent,eol,start
 
+" Show line and column number of the cursor position 
 set ruler
