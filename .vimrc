@@ -56,7 +56,7 @@ set matchtime=3
 
 " Highlight
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE 
-highlight Comment ctermfg=DarkCyan
+highlight Comment ctermfg=LightBlue
 highlight Folded cterm=italic ctermfg=DarkGrey ctermbg=DarkBlue
 highlight Visual ctermbg=DarkBlue
 
