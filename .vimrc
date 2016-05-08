@@ -19,12 +19,6 @@ set cindent
 set foldmethod=indent
 set autowrite		" Automatically save before commands like :next and :make
 
-" Uncomment the following to have Vim jump to the last position when
-" reopening a file
-if has("autocmd")
-  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
-endif
-
 " Uncomment the following to have Vim load indentation rules and plugins
 " according to the detected filetype.
 if has("autocmd")
@@ -81,11 +75,21 @@ inoremap {<CR> {<CR>}<Esc>ko
 " q: sucks
 nmap q: :q
 
-" Enable syntax highlight
-syntax enable
-
 " Force usual backspace behaviour
 set backspace=indent,eol,start
 
 " Show line and column number of the cursor position 
 set ruler
+
+" pathogen
+execute pathogen#infect()
+
+" Enable syntax highlight
+syntax enable
+
+" Uncomment the following to have Vim jump to the last position when
+" reopening a file
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
+
