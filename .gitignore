@@ -1,3 +1,14 @@
-*
+# ignore all files and subdirectories in repo
+/*
+/*/
+
+# unignore these files
 !.vimrc
 !.gitignore
+
+# unignore this directory
+!/.vim/
+
+# ignore this subdirectory
+/.vim/view
+
