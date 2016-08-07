@@ -6,6 +6,9 @@
 !.vimrc
 !.gitignore
 
+# unginore tmux conf
+!.tmux.conf
+
 # unignore this directory
 !/.vim/
 
