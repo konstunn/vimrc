@@ -3,3 +3,5 @@
 	name = Konstantin Gorbunov
 [core]
 	editor = /usr/bin/vi
+[push]
+	default = current
