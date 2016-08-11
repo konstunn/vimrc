@@ -15,3 +15,8 @@
 # ignore this subdirectory
 /.vim/view
 
+# unignore
+!.install.sh
+
+# unignore
+!.gitconfig
