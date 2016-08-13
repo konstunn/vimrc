@@ -2,21 +2,15 @@
 /*
 /*/
 
-# unignore these files
+# unignore these files...
 !.vimrc
 !.gitignore
-
-# unginore tmux conf
 !.tmux.conf
+!.install.sh
+!.gitconfig
 
-# unignore this directory
+# and unignore this directory
 !/.vim/
 
-# ignore this subdirectory
+# but ignore this subdirectory
 /.vim/view
-
-# unignore
-!.install.sh
-
-# unignore
-!.gitconfig
