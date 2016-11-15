@@ -3,5 +3,6 @@
 	name = Konstantin Gorbunov
 [core]
 	editor = /usr/bin/vi
+	pager = less -x4
 [push]
 	default = current
