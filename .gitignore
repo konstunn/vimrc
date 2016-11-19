@@ -1,16 +1,5 @@
-# ignore all files and subdirectories in repo
-/*
-/*/
+# non-dot files
+/[^.]*
 
-# unignore these files...
-!.vimrc
-!.gitignore
-!.tmux.conf
-!.install.sh
-!.gitconfig
-
-# and unignore this directory
-!/.vim/
-
-# but ignore this subdirectory
-/.vim/view
+# unignore files under ./bin directory
+!/bin
