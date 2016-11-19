@@ -1,12 +1,13 @@
-# ignore all files and subdirectories in repo
-/*
-/*/
+# ignore everything
+*
 
 # unignore these files...
 !.vimrc
-!.gitignore
 !.tmux.conf
 !.install.sh
+
+# unignore .git*
+!.gitignore
 !.gitconfig
 
 # and unignore this directory
