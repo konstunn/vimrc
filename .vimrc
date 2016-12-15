@@ -89,3 +89,7 @@ set backspace=indent,eol,start
 
 " Show line and column number of the cursor position 
 set ruler
+
+set keymap=russian-jcukenwin
+set iminsert=0
+set imsearch=0
