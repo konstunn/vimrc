@@ -6,3 +6,5 @@
 	pager = less -x4
 [push]
 	default = current
+[diff]
+	tool = vimdiff
