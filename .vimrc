@@ -102,7 +102,7 @@ set number
 "
 set laststatus=2
 
-" Show matching paretheses
+" Show matching parentheses
 set showmatch
 set matchtime=3
 
@@ -139,9 +139,10 @@ nmap q: :q
 " Force usual backspace behaviour
 set backspace=indent,eol,start
 
-" Show line and column number of the cursor position 
+" Show line and column number of the cursor position
 set ruler
 
+" type russian with ease
 set keymap=russian-jcukenwin
 set iminsert=0
 set imsearch=0
