@@ -2,11 +2,72 @@
 " FIXME smartindent does not work
 " for K&R style indented shell scripts
 
-" FIXME Prevent escape from moving the cursor
-" one character to the left
+" be iMproved, required by Vundle
+set nocompatible
+
+" required by Vundle
+filetype off
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'airblade/vim-gitgutter'
+
+"Plugin 'tpope/vim-fugitive'
+
+Plugin 'python-mode/python-mode'
+
+"Plugin 'hdima/python-syntax'
+Plugin 'JuliaEditorSupport/julia-vim'
+
+" Tab-complete python code
+"Plugin 'vim-scripts/Pydiction'
+
+" jedi code autocompletion library for python
+Plugin 'davidhalter/jedi-vim'
+
+" low-contrast color scheme for Vim
+"Plugin 'jnurmine/Zenburn'
+
+"Plugin 'altercation/vim-colors-solarized'
+
+" syntax checking hacks for vim
+" Plugin 'vim-syntastic/syntastic'
 
 "
-set nocompatible
+Plugin 'jalvesaq/Nvim-R'
+
+Plugin 'tmhedberg/SimpylFold'
+
+"
+"Plugin 'Valloric/YouCompleteMe'
+
+"
+"Plugin 'lervag/vimtex'
+
+"
+"Plugin 'vim-latex/vim-latex'
+"
+"Plugin 'coyotebush/vim-pweave'
+
+"Plugin 'ntpeters/vim-better-whitespace'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+"
+let R_pdfviewer = "evince"
+
+"
+let g:SimpylFold_docstring_preview=1
+
+syntax on
 
 " Indents, tabs
 set tabstop=4
