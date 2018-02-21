@@ -154,3 +154,9 @@ set ruler
 set keymap=russian-jcukenwin
 set iminsert=0
 set imsearch=0
+
+" I accidentally press W instead of w when I want to save
+command W w
+
+" I accidentally prees Q instead of q when I want to quit
+command Q q
