@@ -82,15 +82,9 @@ set autowrite		" Automatically save before commands like :next and :make
 
 " Uncomment the following to have Vim jump to the last position when
 " reopening a file
-if has("autocmd")
-  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
-endif
-
-" Uncomment the following to have Vim load indentation rules and plugins
-" according to the detected filetype.
-if has("autocmd")
-  filetype plugin indent on
-endif
+"if has("autocmd")
+"  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$")  | exe "normal! g'\"" | endif
+"endif
 
 "
 "set exrc
@@ -134,16 +128,13 @@ map <right> <NOP>
 " Reset search highlight on Ctrl+C
 map <C-c>	<Esc>:noh<CR>
 
-" Autocomplete matching curly brace 
-inoremap {<CR> {<CR>}<Esc>ko
+" Autocomplete matching curly brace
+"inoremap {<CR> {<CR>}<Esc>ko
 
 "inoremap ( ()<Esc>i
 
 " q: sucks
 nmap q: :q
-
-" Enable syntax highlight
-syntax enable
 
 " Force usual backspace behaviour
 set backspace=indent,eol,start
