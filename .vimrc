@@ -110,10 +110,10 @@ set matchtime=3
 "colorscheme evening
 
 " Highlight
-highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE 
+highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE
 highlight Comment ctermfg=LightBlue
-highlight Folded cterm=italic ctermfg=DarkGrey ctermbg=DarkBlue
-highlight Visual ctermbg=DarkBlue
+highlight Folded cterm=italic ctermfg=Grey ctermbg=Blue
+" highlight Visual ctermfg=LightBlue
 
 " Save folds views
 autocmd BufWinLeave *.* mkview
