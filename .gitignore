@@ -1,6 +1,9 @@
 # ignore everything
 *
 
+# unignore bash aliases
+!.bash_aliases
+
 # unignore these files...
 !.vimrc
 !.tmux.conf
