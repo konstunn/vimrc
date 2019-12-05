@@ -1,10 +1,17 @@
 [user]
-	email = konstunn@users.noreply.github.com 
-	name = Konstantin Gorbunov
+    email = konstunn@users.noreply.github.com
+    name = Konstantin Gorbunov
 [core]
-	editor = /usr/bin/vi
-	pager = less -x4
+    editor = /usr/bin/vi
+    pager = less -x4
+    autocrlf = input
 [push]
-	default = current
+    default = current
 [diff]
-	tool = vimdiff
+    tool = vimdiff
+[alias]
+    diffs = diff --staged
+    ds = diff --staged
+    st = status
+    l = log
+    d = diff
