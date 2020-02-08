@@ -15,3 +15,10 @@
     st = status
     l = log
     d = diff
+    a = add
+    cm = commit
+    ch = checkout
+    f = fetch
+    chp = checkout -p
+    ap = add -p
+    cmm = commit -m
