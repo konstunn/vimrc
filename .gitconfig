@@ -24,3 +24,4 @@
   chb = checkout -b
   ap = add -p
   cmm = commit -m
+  rst = reset
